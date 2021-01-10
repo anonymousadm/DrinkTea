@@ -1,4 +1,4 @@
-DrinkTea was developed by Python+Flesk+twurl+shellscript.
+DrinkTea was developed by Python+Flask+twurl+shellscript.
 
 This tool is used to clean your twitter account when you want to delete all tweets and remove all followers and followings.
 
