@@ -13,3 +13,4 @@ This tool is used to clean your twitter account when you want to delete all twee
 <img scr="/screenshot/DrinkTea_05.jpg">
 
 <img scr="/screenshot/DrinkTea_06.jpg">
+
