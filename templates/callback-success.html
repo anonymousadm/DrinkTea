@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}success{% endblock %}
+{% block containercontent %}
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p><strong>Thank you, <strong><a href="https://twitter.com/{{ screen_name }}">@{{screen_name }}</a></strong>, for authorizing DrinkTea.</strong></p>
+<ul>
+    <li>You have Tweeted <span class="label label-success">{{ statuses_count }}</span> times.</li>
+    <li>You have <span class="label label-success">{{ followers_count }}</span> followers.</li>
+    <li>You are following <span class="label label-success">{{ friends_count }}</span> users.</li>
+	<li>You have blocked <span class="label label-success">{{ block_count }}</span> users.</li>
+	<li>You have muted <span class="label label-success">{{ mute_count }}</span> users.</li>
+</ul>
+</div>
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p><strong>感谢你<strong><a href="https://twitter.com/{{ screen_name }}">@{{screen_name }}</a></strong>注册使用“喝茶”.</strong></p>
+<ul>
+    <li>你已发推 <span class="label label-success">{{ statuses_count }}</span> 次.</li>
+    <li>你被 <span class="label label-success">{{ followers_count }}</span> 个人关注.</li>
+    <li>你关注了 <span class="label label-success">{{ friends_count }}</span> 个人.</li>
+	<li>你拉黑了 <span class="label label-success">{{ block_count }}</span> 个人.</li>
+	<li>你禁声了 <span class="label label-success">{{ mute_count }}</span> 个人.</li>
+</ul>
+</div>
+<hr>
+
+<a href="/" class="btn btn-small btn-primary">Go back home</a>
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p>If you want to:</p>
+<ul>
+    <li>Delete all your tweets</li>
+	<li>Backup all your followers, followings, block list and mute list</li>
+</ul>
+	<p><strong> Please be carefull, the data will be purged when you click the button！ </strong></p>
+
+    <p>如果你想继续:</p>
+<ul>
+    <li>删除你所有的推文</li>
+	<li>备份关注你的， 你关注的， 拉黑的， 禁声的列表</li>
+</ul>	
+	<p><strong> 请考虑慎重后再点击！ 点击后会自动删除数据且无法恢复！ </strong></p>
+</div>
+<hr>
+<a href="/drinktea" class="btn btn-small btn-success">DrinkTea/喝茶</a>
+
+{% endblock %}

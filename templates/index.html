@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}start{% endblock %}
+{% block containercontent %}
+
+
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p><strong>IMPORTANT NOTICE:</strong></p>
+    <p>Welcome to use DrinkTea. This application will delete all your tweets, unfollow all your Following, Backup your Following, Followers,Block, Mute list to your.</p>
+</div>
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p><strong>重要提示:</strong></p>
+    <p>欢迎使用"喝茶"。本应用程序会删除你所有的推文，取关你所有的"关注"，备份你的"关注"，"关注者"，“拉黑”，“禁声”清单。</p>
+    <p><small>为什么要叫"喝茶"呢？我想大家应该都该懂得。</small></p>
+</div>
+<hr>
+<p><a href="{{ authorize_url }}?oauth_token={{ oauth_token }}" class="btn btn-small btn-success">Let's Begin</a></p>
+
+{% endblock %}

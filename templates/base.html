@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DrinkTea {% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>DrinkTea</h1>
+		{% block containercontent %}{% endblock %}
+		<hr>
+		<div class="footer">
+			<p class="text-muted"><small>This application is created by the <a href="https://twitter.com/anonymous_adm">@anonymous_adm</a>
+					team. It is written in Python, using <a href="http://flask.pocoo.org/">Flask</a>
+					and <a href="https://requests-oauthlib.readthedocs.io/en/latest/index.html">Requests-OAuthlib</a>. Basic CSS is provided by <a href="http://getbootstrap.com/">Bootstrap</a>.</small></p>
+		</div>
+	</div>
+</body>
+
+</html>

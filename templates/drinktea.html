@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}success{% endblock %}
+{% block containercontent %}
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p><strong>Hello, <strong><a href="https://twitter.com/{{ screen_name }}">@{{ screen_name }}</a></strong>, here is your data download link <img src="{{url_for('static', filename=QRcode)}}"></strong></p>
+</div>
+<hr>
+<div class="bg-info" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px;">
+    <p><strong>你好<strong><a href="https://twitter.com/{{ screen_name }}">@{{ screen_name }}</a></strong>, 这是你的数据下载链接 <img src="{{url_for('static', filename=QRcode)}}"></strong></p>
+</div>
+<hr>
+<a href="/" class="btn btn-small btn-primary">Go back home</a>
+
+{% endblock %}
